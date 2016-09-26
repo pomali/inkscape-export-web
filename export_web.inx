@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Export for Web Icons</_name>
+    <id>net.pomali.export.web</id>
+    <dependency type="executable" location="extensions">export_web.py</dependency>
+    <dependency type="executable" location="extensions">inkex.py</dependency>
+	<param name="help" type="description">Export as web icon pack</param>
+    <param name="path" type="string"  _gui-text="Export path (dir)">~/</param>
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Export" />
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">export_web.py</command>
+    </script>
+</inkscape-extension>
