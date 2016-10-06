@@ -5,7 +5,7 @@
     <dependency type="executable" location="extensions">export_web.py</dependency>
     <dependency type="executable" location="extensions">inkex.py</dependency>
 	<param name="help" type="description">Export as web icon pack</param>
-    <param name="path" type="string"  _gui-text="Export path (dir)">~/</param>
+    <param name="path" type="string" _gui-text="Export path (dir)">./</param>
     <effect needs-live-preview="false">
         <object-type>all</object-type>
         <effects-menu>
